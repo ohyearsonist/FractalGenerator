@@ -53,4 +53,6 @@ input {
     border-radius: 0;
     border: solid;
     font-family: 'Fira Mono';
+
+    margin: 5px;
 }
