@@ -1,7 +1,7 @@
 let INPUT_NAME = "";
 
 let s = (sketch) => {
-  const CANVAS_SIZE = 450;
+  const CANVAS_SIZE = 300;
   const MAX_ITERATION = 3;
   const AGE = 0;
 
