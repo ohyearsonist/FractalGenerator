@@ -24,9 +24,21 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 
     color: black;
     font-family: 'Fira Mono';
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 button {
