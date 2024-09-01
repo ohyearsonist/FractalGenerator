@@ -2,7 +2,7 @@ let INPUT_NAME = "";
 
 let s = (sketch) => {
   const CANVAS_SIZE = 300;
-  const MAX_ITERATION = 3;
+  const MAX_ITERATION = 4;
   const AGE = 0;
 
   let currentIteration = 0;
@@ -109,10 +109,12 @@ let s = (sketch) => {
       newNodeArray = newNodeArray.concat(nodeArray[i].breakUp(newNodeSize));
     }
 
-    nodeArray = newNodeArray;
-    nodeSize = newNodeSize;
-    currentIteration++;
-    fractal();
+    setTimeout(() => {
+      nodeArray = newNodeArray;
+      nodeSize = newNodeSize;
+      currentIteration++;
+      fractal();
+    }, 900);
   }
 
   sketch.setup = () => {
@@ -125,7 +127,7 @@ let s = (sketch) => {
     nodeArray.push(new Node(0, sketch.createVector(0, 0)));
 
     fractal();
-  }
+  };
 
   sketch.draw = () => {
     sketch.background(220);
@@ -133,7 +135,7 @@ let s = (sketch) => {
     for (let i in nodeArray) {
       nodeArray[i].render();
     }
-  }
+  };
 };
 
 function submitForm() {
