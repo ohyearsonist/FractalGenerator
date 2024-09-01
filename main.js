@@ -140,6 +140,6 @@ let s = (sketch) => {
 
 function submitForm() {
   INPUT_NAME = document.getElementById("nameInput").value;
-  document.getElementById("submitButton").setAttribute("disabled", "disabled");
-  let p5js = new p5(s, document.getElementById("sketch-container"));
+  document.getElementById("sketch-container").innerHTML = '';
+  p5js = new p5(s, document.getElementById("sketch-container"));
 }
