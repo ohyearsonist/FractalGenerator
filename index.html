@@ -3,20 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gerador de Fractais</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js"></script>
-    <script src="./main.js"></script>
-    <link rel="stylesheet" href="style.css" />
+    <title>O Fractalizador</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="upper-part">
-      <h1>Gerador de Fractais</h1>
-      <form action="Javascript:submitForm()">
-        <label  id="label" for="nameInput">Digite seu nome aqui:</label>
-        <input type="text" name="nameInput" id="nameInput" />
-        <button type="submit" id="submitButton">Gerar!</button>
-      </form>
+      <h1>O Fractalizador</h1>
     </div>
-    <div id="sketch-container"></div>
+
+    <a href="./pages/reescrita-de-matriz.html">
+      <div class="card">
+        <img src="assets/reescrita-de-matriz-logo.svg" alt="Matriz Genérica" />
+        <p>Reescrita de Matriz</p>
+      </div>
+    </a>
+    <div class="card">
+      <img src="assets/sistema-l-logo.svg" alt="Uma direção se torna várias" />
+      <p>Sistema L</p>
+    </div>
   </body>
 </html>
