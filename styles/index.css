@@ -53,3 +53,13 @@ a {
 #matriz-logo {
     height: 80px;
 }
+
+#demonstrations {
+    display: flex;
+    width: 310px;
+    justify-content: space-between;
+}
+
+#demonstrations .card {
+    width: 140px;
+}

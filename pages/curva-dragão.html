@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O Fractalizador</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js"></script>
+    <script src="../src/curva-dragão.js"></script>
+    <link rel="stylesheet" href="../styles/generators.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a id="back" href="https://ohyearsonist.github.io/FractalGenerator/">
+      <img src="https://www.svgrepo.com/show/447907/back.svg" alt="back" />
+    </a>
+    <div id="upper-part">
+      <h1>O Fractalizador - A Curva Dragão</h1>
+      <button onclick="submitForm(); buttonClick();" id="submitButton">Iterar!</button>
+    </div>
+    <main id="sketch-container"></main>
+    <div class="zoom">
+      <p>Zoom:</p>
+      <input
+        type="range"
+        name="lengthSlider"
+        id="lengthSlider"
+        min="0.5"
+        max="50"
+      />
+    </div>
+  </body>
+</html>
