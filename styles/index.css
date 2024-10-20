@@ -22,6 +22,14 @@ h1 {
     text-align: center;
 }
 
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
 .card {
     display: flexbox;
     flex-direction: column;
@@ -34,6 +42,14 @@ h1 {
     font-family: 'Advent Pro';
 
     border: 5px solid black;
-    width: 350px;
+    width: 300px;
     height: 150px;
+}
+
+.card:hover {
+    background-color: beige;
+}
+
+#matriz-logo {
+    height: 80px;
 }
