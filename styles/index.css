@@ -63,3 +63,13 @@ a {
 #demonstrations .card {
     width: 140px;
 }
+
+#fullTextLink {
+    font-family: 'Advent Pro';
+    color: black;
+}
+
+#fullTextLink a {
+    color: black;
+    text-decoration: underline;
+}
